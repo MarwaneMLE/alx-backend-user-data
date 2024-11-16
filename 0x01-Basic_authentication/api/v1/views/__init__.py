@@ -9,7 +9,7 @@ from api.v1.views.index import *
 from api.v1.views.users import *
 
 User.load_from_file()
-<<<<<<< HEAD
-=======
+#<<<<<<< HEAD
+#=======
 
->>>>>>> refs/remotes/origin/master
+#>>>>>>> refs/remotes/origin/master

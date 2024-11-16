@@ -135,7 +135,7 @@ class Base():
             return True
         
         return list(filter(_search, DATA[s_class].values()))
-<<<<<<< HEAD
-=======
+#<<<<<<< HEAD
+#=======
 
->>>>>>> refs/remotes/origin/master
+#>>>>>>> refs/remotes/origin/master

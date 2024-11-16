@@ -7,4 +7,8 @@ a = Auth()
 
 print(a.require_auth("/api/v1/status/", ["/api/v1/status/"]))
 print(a.authorization_header())
+<<<<<<< HEAD
 print(a.current_user())
+=======
+print(a.current_user())
+>>>>>>> refs/remotes/origin/master

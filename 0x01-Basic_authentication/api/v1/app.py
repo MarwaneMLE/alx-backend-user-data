@@ -7,13 +7,17 @@ from api.v1.views import app_views
 from flask import Flask, jsonify, abort, request
 from flask_cors import (CORS, cross_origin)
 import os
+<<<<<<< HEAD
 from api.v1.auth.auth import Auth
 from api.v1.auth.basic_auth import BasicAuth
+=======
+>>>>>>> refs/remotes/origin/master
 
 
 app = Flask(__name__)
 app.register_blueprint(app_views)
 CORS(app, resources={r"/api/v1/*": {"origins": "*"}})
+<<<<<<< HEAD
 auth = None
 auth_type = getenv('AUTH_TYPE', 'auth')
 if auth_type == 'auth':
@@ -34,6 +38,8 @@ def forbidden(error) -> str:
     """Forbidden handler.
     """
     return jsonify({"error": "Forbidden"}), 403
+=======
+>>>>>>> refs/remotes/origin/master
 
 
 @app.errorhandler(404)
@@ -43,6 +49,7 @@ def not_found(error) -> str:
     return jsonify({"error": "Not found"}), 404
 
 
+<<<<<<< HEAD
 @app.before_request
 def authenticate_user():
     """Authenticates a user before processing a request.
@@ -66,3 +73,10 @@ if __name__ == "__main__":
     host = getenv("API_HOST", "0.0.0.0")
     port = getenv("API_PORT", "5000")
     app.run(host=host, port=port)
+=======
+if __name__ == "__main__":
+    host = getenv("API_HOST", "0.0.0.0")
+    port = getenv("API_PORT", "5000")
+    app.run(host=host, port=port)
+
+>>>>>>> refs/remotes/origin/master
